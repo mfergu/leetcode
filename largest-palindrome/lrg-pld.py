@@ -14,12 +14,13 @@ def largestPalindrome(n):
         return True
 
     buff = []
-    for i in range( ( n*10)-1, 1, -1):
-        for j in range( ( n*10)-1, 1, -1):
+    for i in range( ( 10**n)-1, 1, -1):
+        for j in range( ( 10**n)-1, 1, -1):
             temp = i*j
             if( test_palindrome(str(temp))):
                 buff.append(temp)
 
     large_pal = max(buff)
+    print(buff)
     return large_pal % 1337 
 
