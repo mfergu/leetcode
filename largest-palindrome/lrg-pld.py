@@ -21,6 +21,5 @@ def largestPalindrome(n):
                 buff.append(temp)
 
     large_pal = max(buff)
-    print(buff)
     return large_pal % 1337 
 
